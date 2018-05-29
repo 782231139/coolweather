@@ -1,4 +1,4 @@
-package com.coolweather.android.coolweather;
+package com.coolweather.android.zpc;
 
 import org.junit.Test;
 
