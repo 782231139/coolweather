@@ -1,12 +1,13 @@
 package com.coolweather.android.zpc;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,5 +19,8 @@ public class MainActivity extends Activity {
             startActivity(intent);
             finish();
         }
+    }
+    public static void launch(Context context) {
+        context.startActivity(new Intent(context, MainActivity.class));
     }
 }
